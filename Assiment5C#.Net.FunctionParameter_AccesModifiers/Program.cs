@@ -76,9 +76,9 @@
             //
             // Call it with three book titles.
 
-            string[] titles = { "Clean Code", "Refactoring", "The Pragmatic Programmer" };
+            string[] Titles = { "Clean Code", "Refactoring", "The Pragmatic Programmer" };
 
-
+            PrintAllTitles(Titles);
             #endregion
 
 
@@ -118,8 +118,9 @@
             // Does it compile?
             // Why?
 
-
-
+            Console.WriteLine($"copiesInStock is : {book.copiesInStock}");
+            //yes , it compiles because the copiesInStock field is marked as internal,
+            //which means it can be accessed from any code within the same assembly(project)
 
             #endregion
 
@@ -132,8 +133,8 @@
             // Set its value from Main.
             // Then print it.
 
-
-
+            book.Title = "Software Engineering";
+            Console.WriteLine($"This title of book is: {book.Title}");
 
             #endregion
 
@@ -295,19 +296,12 @@
         // Access Modifiers - Question 1
         // private password field
             private string password = "secret";
-
-
-
         // Access Modifiers - Question 2
         // internal copiesInStock field
-
-
-
-
+        internal int copiesInStock = 5;
         // Access Modifiers - Question 3
         // public Title field
-
-
+        public string Title;
 
 
         // Access Modifiers - Question 4
