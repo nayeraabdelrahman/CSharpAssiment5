@@ -48,8 +48,9 @@
             // Call it again passing both:
             // - title
             // - pages
+            PrintBookInfo("Clean Code");
+            PrintBookInfo("Refactoring", 450);
 
-           
 
 
             #endregion
@@ -61,7 +62,7 @@
             //
             // Pass pages BEFORE title.
 
-
+            PrintBookInfo(pages: 450, title: "Clean Code");
 
 
             #endregion
@@ -256,14 +257,18 @@
 
         // Function Parameter Passing - Question 2 & 3
         // PrintBookInfo method
-      
+        public static void PrintBookInfo(string title, int pages = 300)
+        {
+            Console.WriteLine("Title: " + title);
+            Console.WriteLine("Pages: " + pages);
+        }
 
 
 
         // Function Parameter Passing - Question 4
         // PrintAllTitles method
 
-
+     
 
 
         #endregion
