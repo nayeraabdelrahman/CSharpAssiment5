@@ -99,8 +99,10 @@
             // What happens?
             // Why?
 
-
-
+            Book book = new Book();
+            //Console.WriteLine(book.password);
+            //error:'Book.password' is inaccessible due to its protection level
+            //because the password field is private and cannot be accessed from outside the Book class.
 
             #endregion
 
@@ -292,7 +294,7 @@
     {
         // Access Modifiers - Question 1
         // private password field
-
+            private string password = "secret";
 
 
 
