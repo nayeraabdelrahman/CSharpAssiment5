@@ -76,7 +76,7 @@
             //
             // Call it with three book titles.
 
-
+            string[] titles = { "Clean Code", "Refactoring", "The Pragmatic Programmer" };
 
 
             #endregion
@@ -268,7 +268,13 @@
         // Function Parameter Passing - Question 4
         // PrintAllTitles method
 
-     
+        public static void PrintAllTitles(params string[] titles)
+        {
+            for (int i = 0; i < titles.Length; i++)
+            {
+                Console.WriteLine($"Title {i + 1} : {titles[i]}");
+            }
+        }
 
 
         #endregion
