@@ -141,21 +141,12 @@
 
             #region Access Modifiers - Question 4
             // Declare an enum:
-            //
             // Genre
-            //
-            // With the values:
-            // Fiction
-            // NonFiction
-            // Science
-            //
-            // Add a Genre property to the Book class.
-            //
             // Assign:
             // Genre.Science
             //
             // Then print it.
-
+            Console.WriteLine(book.genre);
 
 
 
@@ -295,7 +286,7 @@
     {
         // Access Modifiers - Question 1
         // private password field
-            private string password = "secret";
+         private string password = "secret";
         // Access Modifiers - Question 2
         // internal copiesInStock field
         internal int copiesInStock = 5;
@@ -306,7 +297,7 @@
 
         // Access Modifiers - Question 4
         // Genre property
-
+        public Genre genre = Genre.Science;
 
     }
 
@@ -321,7 +312,12 @@
     #region Genre Enum
 
     // Declare Genre enum here
-
+    internal enum Genre
+    {
+        Fiction,
+        NonFiction,
+        Science
+    }
 
     #endregion
 }
