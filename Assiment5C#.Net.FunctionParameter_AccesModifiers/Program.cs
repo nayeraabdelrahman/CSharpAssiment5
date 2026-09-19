@@ -162,7 +162,9 @@
             // Genre.Science
             //
             // Cast each one to int.
-
+            Console.WriteLine((int)Genre.Fiction);
+            Console.WriteLine((int)Genre.NonFiction);
+            Console.WriteLine((int)Genre.Science);
 
 
 
@@ -314,7 +316,7 @@
     // Declare Genre enum here
     internal enum Genre
     {
-        Fiction,
+        Fiction=1,
         NonFiction,
         Science
     }
