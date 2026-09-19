@@ -198,7 +198,9 @@
             //
             // Print the result.
 
-
+            string genreText = "Science";
+            Genre generValue=Enum.Parse<Genre>(genreText);
+            Console.WriteLine(genreText);
 
 
             #endregion
