@@ -179,8 +179,9 @@
             // Cast genreNumber into a Genre value.
             // Print the result.
 
-
-
+            int genreNumber = 1;
+            Genre genre = (Genre)genreNumber;
+            Console.WriteLine(genre);
 
             #endregion
 
