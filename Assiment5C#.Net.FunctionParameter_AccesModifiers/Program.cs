@@ -220,7 +220,10 @@
             //
             // If it fails, print:
             // "Unknown genre"
-
+            string genreText2 = "Mystery";
+            bool Flag;
+            Flag = Enum.TryParse(genreText2, out generValue);
+            Console.WriteLine(Flag ? generValue : "Unknown genre");
 
 
 
